@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Andile Zikhali's portfolio showcasing web development, app design, and innovative solutions.">
+    <meta name="author" content="Andile Zikhali">
+    <meta name="keywords" content="Andile Zikhali, Web Development, App Design, Full-Stack Development, Laravel, React, MongoDB, Node.js, Custom Platforms">
+    <title>Andile Zikhali Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #4f46e5, #2563eb);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about,
+        .projects,
+        .services,
+        .contact {
+            margin-bottom: 60px;
+        }
+
+        .about h2,
+        .projects h2,
+        .services h2,
+        .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #38bdf8;
+        }
+
+        .about p {
+            text-align: justify;
+            margin-bottom: 20px;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .projects .project {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .projects .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .projects .project h3 {
+            font-size: 1.5rem;
+            color: #4f46e5;
+            margin-bottom: 15px;
+        }
+
+        .services ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .services ul li {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .services ul li::before {
+            content: "✔";
+            color: #4f46e5;
+            margin-right: 10px;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact input,
+        .contact textarea {
+            padding: 12px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            font-size: 1rem;
+            background: #1e293b;
+            color: #fff;
+        }
+
+        .contact input::placeholder,
+        .contact textarea::placeholder {
+            color: #94a3b8;
+        }
+
+        .contact button {
+            padding: 12px;
+            background: #4f46e5;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .contact button:hover {
+            background: #2563eb;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #0f172a;
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        footer a {
+            color: #38bdf8;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #4f46e5;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .projects .project {
+                font-size: 0.9rem;
+            }
+
+            .about p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Andile Zikhali's Portfolio</h1>
+        <p>Innovative Solutions for Web, App, and Custom Software Development</p>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Hi, I’m Andile Zikhali, a passionate full-stack developer with expertise in Laravel, React, MongoDB, .NET, and much more. I’ve worked with prestigious organizations such as SEDA, Empire Partner Foundation, and Ushaka Gaming Studio to deliver innovative solutions.</p>
+        <p>From crafting robust web applications to designing intuitive user interfaces, I aim to bridge technology with creativity to solve real-world problems.</p>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>MzansiVz</h3>
+            <p>A Netflix-style streaming app with an intuitive design and personalized recommendations.</p>
+        </div>
+        <div class="project">
+            <h3>LELO Games</h3>
+            <p>A game aggregator app allowing users to log in, save progress, and enjoy popular games like FIFA and Mortal Kombat.</p>
+        </div>
+        <div class="project">
+            <h3>Custom Management Systems</h3>
+            <p>Developed tailored management solutions for businesses to enhance their operations.</p>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2>Services</h2>
+        <ul>
+            <li>Frontend Development: React, Angular</li>
+            <li>Backend Development: Laravel, Node.js, .NET</li>
+            <li>Database Solutions: MongoDB, MySQL</li>
+            <li>Custom Web Platforms</li>
+            <li>Mobile App Development</li>
+            <li>API Development & Integration</li>
+            <li>Consulting & Training</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:andile@example.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by <a href="mailto:andile@example.com">Andile Zikhali</a> | &copy; 2025 All Rights Reserved</p>
+        <p>Follow me: 
+            <a href="https://github.com/andile" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/andile" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/andile" target="_blank"><i class="fab fa-twitter"></i></a>
+        </p>
+    </footer>
+</body>
+</html>
